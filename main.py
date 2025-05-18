@@ -44,7 +44,9 @@ def cli(
     ),
     clipboard: bool = typer.Option(True, help="copy to clipboard"),
     markdown: bool = typer.Option(True, help="copy in markdown syntax"),
-    language: str | None = typer.Option(None, help="language to markdown label"),
+    language: str | None = typer.Option(
+        None, "--language", "-l", help="language to markdown label"
+    ),
 ):
     """
     Exibe o conteúdo de um arquivo com opções para copiar, formatar como Markdown e incluir o nome do arquivo.
