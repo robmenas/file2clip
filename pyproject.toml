@@ -1,0 +1,16 @@
+[project]
+name = "file2clip"
+version = "0.1.0"
+description = "copy the file content in code block format"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "clipboard>=0.0.4",
+    "typer>=0.15.4",
+]
+
+[tool.uv]
+package = true
+
+[project.scripts]
+file2clip = "main:main"
